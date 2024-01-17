@@ -11,8 +11,11 @@ public class Sudoku {
         }
 
         SudokuBoard sudokuBoard = new SudokuBoard();
-//        List<Integer> sudokuRow = new ArrayList<>();
-//        sudokuRow.add((int) randomValue);
+        for (Block block: sudokuBoard.getBlocks()) {
+            block.setCells(randomValue);
+
+        }
+
         sudokuBoard.getSudokuBoard().add((int) randomValue);
 
         System.out.println(sudokuBoard.getSudokuBoard()) ;

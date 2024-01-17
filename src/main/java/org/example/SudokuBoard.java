@@ -4,24 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SudokuBoard {
+    private Block[] blocks ;
 
-    private Block[] block = new Block[8];
-
-    private List<Integer> sudokuRow;
-
-    public SudokuBoard() {
-        this.sudokuRow = new ArrayList<>();
+    public SudokuBoard(){
+        blocks = new Block[8];
+    }
+    public Block[] getBlocks() {
+        return blocks;
     }
 
-    public List<Integer> getSudokuBoard() {
-        return sudokuRow;
+    public void setBlocks(Block[] block) {
+        this.blocks = block;
     }
 
-    public void setSudokuBoard(List<Integer> sudokuRow) {
-        this.sudokuRow = sudokuRow;
-    }
 
-    public void printSudokuBoard() {
-        System.out.println(sudokuRow);
-    }
+//    private List<Integer> sudokuRow;
+
+
+//    public void printSudokuBoard() {
+//        System.out.println(sudokuRow);
+//    }
 }

@@ -53,7 +53,7 @@ public class STAccountTest {
 
     @Test
     public void print(){
-        sudokuBoard.printSudokuBoard();
+//        sudokuBoard.printSudokuBoard();
     }
 
     @Test
