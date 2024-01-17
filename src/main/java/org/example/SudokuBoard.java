@@ -5,6 +5,8 @@ import java.util.List;
 
 public class SudokuBoard {
 
+    private Block[] block = new Block[8];
+
     private List<Integer> sudokuRow;
 
     public SudokuBoard() {
